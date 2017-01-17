@@ -1,0 +1,308 @@
+/*
+ Theme Name:     Elegant Themes Nimble Child
+ Theme URI:      
+ Description:    Nimble Child Theme
+ Author:         Mattbotttttttt
+ Author URI:     
+ Template:       Nimble
+ Version:        1.0.0
+*/
+ 
+@import url("../Nimble/style.css");
+ 
+/* =Theme customization starts here
+------------------------------------------------------- */
+
+body{
+color:#252525;
+}
+
+.container{
+	width:100%;
+	max-width:1800px;
+
+}
+
+#content-area{
+padding-left:10px;
+padding-right:10px;
+}
+
+@media only screen and (min-width: 978px){
+.container{
+padding-left:0px;
+padding-right:0px;
+  
+}
+}
+
+
+
+#left-area {
+    width: 100%;
+}
+
+@media only screen and (min-width: 767px){
+#left-area {
+
+    width: 70%;
+}
+}
+
+@media only screen and (max-width: 767px){
+#sidebar {
+    border-top: 1px solid #e0dddd;
+
+     display: inline-block;
+margin-top:60px;
+padding-top:40px;
+width:100%;
+
+}
+
+}
+#top-area{
+     padding: 20px 0 20px;
+}
+
+.top-area{
+	padding: 20px 0 33px;
+}
+
+
+@media only screen and (max-width: 767px){
+#top-area {
+    padding-bottom: 18px;
+}}
+
+.post-title {
+    text-align: left;
+    margin-bottom:0px;
+}
+
+p.meta-info {
+	padding-bottom:5px;
+}
+
+#content-area {
+    padding: 45px 10px 40px 10px;
+    position: relative;
+}
+#content-area:before {
+    border-left: 0px solid #e0dddd;
+
+}
+
+
+@media only screen and (min-width: 767px){
+#content-area:before {
+    border-left: 1px solid #e0dddd;
+    content: "";
+    height: 100%;
+    left: 75%;
+    position: absolute;
+    top: 0;
+    width: 1px;
+}}
+
+
+
+.hy-meta{
+	font-size: 16px;
+    margin: 8px 0 35px 0;
+    line-height: 24px;
+}
+
+.hy-title{ 
+	color:rgb(41, 41, 41); 
+    font-weight: bold;
+text-transform: uppercase;
+}
+.hy-title span{
+color:gray; font-size:12px;font-weight:normal;
+text-transform: none;
+}
+.single .hy-title span{
+//display:block;
+margin-top:5px;
+}
+
+ .hy-grouping{
+ 	margin-bottom:60px;
+ }
+
+.widget h4.widgettitle {
+	display:none;
+}
+
+.entry{
+margin-bottom:40px;
+}
+
+.single #page-name .section-title {
+    padding:30px 10px;
+}
+
+
+#page-name .section-title, #page-name h1 {
+    padding-bottom: 0px;
+
+}
+
+.section-title h2, #page-name h1 {
+    font-size: 40px;letter-spacing: -3px;
+}
+
+@media only screen and (max-width: 960px) and (min-width: 768px){
+.section-title h2, #page-name h1 {
+    font-size: 40px;
+}
+}
+
+.meta-info strong{
+color:gray;
+}
+
+.teaserCaption{
+
+width: 80%;
+    line-height: 18px;
+}
+
+br {
+    display: block;
+    margin-bottom: 2px;
+    font-size:2px;
+    line-height: 2px;
+}
+
+a.learn-more{
+	color:black;
+border-color:#b7b7b7;
+}
+
+a.learn-more:hover, #sidebar a.learn-more:hover {
+	color:white;
+animation: none;
+
+}
+
+
+
+#sidebar a.learn-more{
+	color:black;
+	width:100%;
+	text-align:center;
+	padding: 10px 0;
+}
+
+.widget{
+padding-left:0px;
+}
+
+#search-form #searchinput {
+    width: 75%;
+}
+
+#page-name {
+
+    margin-top: 0px;
+}
+@media only screen and (min-width: 768px){
+#page-name {
+
+    text-align:left
+}	
+
+}
+
+#breadcrumbs_box {
+min-height:30px;
+
+}
+
+.breadcrumb-container{
+float:left;
+width:100%;
+display:block;
+}
+
+#breadcrumbs_box:before,
+#breadcrumbs_box:after{
+background-position:center center;
+    height: 30px;
+
+}
+#breadcrumbs a, #breadcrumbs span.raquo {
+    padding: 8px 4px 8px 17px;
+
+}
+#breadcrumbs span.raquo {
+    padding: 8px 12px 8px 17px;
+
+}
+
+
+#breadcrumbs span.raquo.last,
+#breadcrumbs span.raquo {
+	background-position:center center;
+
+}
+
+
+#page-name .section-title h1, #page-name .section-title .section-subtitle, .main_post_info {
+    text-decoration: none;
+    color: #555e58;
+    text-shadow: none;
+ 
+}
+
+.section-title h2, #page-name h1 {
+    font-size: 30px;
+    letter-spacing: -1px;
+
+}
+
+.single #page-name .section-title{
+   padding: 40px 10px 10px 10px;
+}
+
+
+@media only screen and (min-width: 767px){
+#content-area:before {
+border:0px solid white;
+
+}
+}
+
+.half{
+width:47%;
+border:2px solid white;
+float:left;
+position:relative;
+}
+
+.half .wp-caption-text{
+
+}
+
+.half:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (min-width: 600px){
+.post_content .one_half {
+    width: 49%;
+}
+
+.post_content .one_third {
+    width: 32%;
+}
+}
+
+
+.post_content  .one_half, .post_content .one_third, .post_content .two_third, .post_content .one_fourth, .post_content .three_fourth {
+    margin-right: 1%;
+}

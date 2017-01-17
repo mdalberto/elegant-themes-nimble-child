@@ -1,0 +1,23 @@
+/*
+ Theme Name:     Elegant Themes Nimble Child
+ Theme URI:      
+ Description:    Nimble Child Theme
+ Author:         Mattbotttttttt
+ Author URI:     
+ Template:       Nimble
+ Version:        1.0.0
+*/
+ 
+@import url("../Nimble/style.css");
+ 
+/* =Theme customization starts here
+------------------------------------------------------- */
+@import "base/framework";
+@import "elements/breadcrumbs";
+@import "elements/entry";
+// Section-specific stuff
+
+@import "sections/hypotheses";
+@import "sections/tests";
+
+// Helpers and Utils
