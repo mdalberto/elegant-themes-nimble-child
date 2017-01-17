@@ -1,0 +1,22 @@
+#breadcrumbs_box {
+  min-height: 30px; }
+
+.breadcrumb-container {
+  float: left;
+  width: 100%;
+  display: block; }
+
+#breadcrumbs_box:before,
+#breadcrumbs_box:after {
+  background-position: center center;
+  height: 30px; }
+
+#breadcrumbs a, #breadcrumbs span.raquo {
+  padding: 8px 4px 8px 17px; }
+
+#breadcrumbs span.raquo {
+  padding: 8px 12px 8px 17px; }
+
+#breadcrumbs span.raquo.last,
+#breadcrumbs span.raquo {
+  background-position: center center; }
