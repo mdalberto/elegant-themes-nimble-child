@@ -5,6 +5,7 @@ body{
 .container{
 	width:100%;
 	max-width:1800px;
+	clear:both;
 
 	@media only screen and (min-width: 978px){
 		padding-left:0px;
@@ -31,15 +32,30 @@ body{
 	}
 }
 
+#main-area{
+	clear:both;
+}
 
+#top-area{
+	padding: 20px 0 33px;
+}
 
-
-
-
+#content-area {
+    padding: 0 10px 40px 10px;
+    position: relative;
+}
 
 
 
 /////// above is clean /////////
+
+#top-menu {
+    float: right;
+    margin-top: 0px;
+    margin-right: 40px;
+}
+
+
 
 #left-area {
     width: 100%;
@@ -59,9 +75,7 @@ body{
 
 }
 
-.top-area{
-	padding: 20px 0 33px;
-}
+
 
 
 @media only screen and (max-width: 767px){
@@ -112,13 +126,20 @@ margin-top:5px;
 
 
 
-.single #page-name .section-title {
-    padding:30px 10px;
-}
+// .single #page-name .section-title {
+//     padding:30px 10px;
+
+// }
 
 
-#page-name .section-title, #page-name h1 {
-    padding-bottom: 0px;
+// #page-name .section-title, #page-name h1 {
+//     padding-bottom: 0px;
+
+
+// }
+
+ #page-name .section-title {
+    padding:30px 10px 10px 10px;
 
 }
 
@@ -151,7 +172,8 @@ br {
 
 a.learn-more{
 	color:black;
-border-color:#b7b7b7;
+	border-color:#b7b7b7;
+	float:left;
 }
 
 a.learn-more:hover, #sidebar a.learn-more:hover {
@@ -204,9 +226,9 @@ padding-left:0px;
 
 }
 
-.single #page-name .section-title{
-   padding: 40px 10px 10px 10px;
-}
+// .single #page-name .section-title{
+//    padding: 40px 10px 10px 10px;
+// }
 
 
 @media only screen and (min-width: 767px){

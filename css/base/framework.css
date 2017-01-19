@@ -3,7 +3,8 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1800px; }
+  max-width: 1800px;
+  clear: both; }
   @media only screen and (min-width: 978px) {
     .container {
       padding-left: 0px;
@@ -24,6 +25,12 @@ body {
         top: 0;
         width: 1px; } }
 
+#main-area {
+  clear: both; }
+
+#top-area {
+  padding: 20px 0 33px; }
+
 #left-area {
   width: 100%; }
   @media only screen and (min-width: 767px) {
@@ -37,9 +44,6 @@ body {
     margin-top: 60px;
     padding-top: 40px;
     width: 100%; } }
-
-.top-area {
-  padding: 20px 0 33px; }
 
 @media only screen and (max-width: 767px) {
   #top-area {

@@ -1,0 +1,27 @@
+.postId{
+	//color:$drk-teal;
+	font-weight:normal;
+	display: block;
+
+	.postIdType{
+		font-size:inherit;
+		margin:0;
+		line-height:inherit;
+		display: inline-block;
+
+	}
+	.postIdNumb{
+		display: inline-block;
+	}
+
+	.raquo{
+		display:none;
+	}
+
+    @media (min-width: $screen-sm-min) {
+        display: inline-block;
+        .raquo{
+			display:inline-block;
+		}
+    }
+}

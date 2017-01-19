@@ -5,18 +5,23 @@
  Author:         Mattbotttttttt
  Author URI:     
  Template:       Nimble
- Version:        1.0.0
+ Version:        1.0.1
 */
  
 @import url("../Nimble/style.css");
  
 /* =Theme customization starts here
 ------------------------------------------------------- */
-@import "base/framework";
+
+@import "base/variables";
+@import "base/scaffolding";
+
 @import "elements/breadcrumbs";
 @import "elements/entry";
-// Section-specific stuff
+@import "elements/sidebar";
+@import "elements/type";
 
+// Section-specific stuff
 @import "sections/hypotheses";
 @import "sections/tests";
 

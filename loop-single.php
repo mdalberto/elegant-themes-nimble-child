@@ -27,11 +27,32 @@
 
         <div class="post_content">
 
-
-
-
-
             <?php if ( is_singular( 'hypotheses' ) )  { ?>
+
+                <?php if( get_field('number') ): ?>
+                      <div class="hy-meta"><?php the_field( 'number' ); ?></div>
+                 <?php endif; ?>
+                <?php if( get_field('hypothesis') ): ?>
+                      <div class="hy-title">Hypothesis: </div>
+                      <div class="hy-meta"><?php the_field( 'hypothesis' ); ?></div>
+                 <?php endif; ?>
+
+                 <?php if( get_field('hypothesis_date') ): ?>
+                      <div class="hy-title">Date: </div>
+                      <div class="hy-meta"><?php the_field( 'hypothesis_date' ); ?></div>
+                 <?php endif; ?>
+
+
+                 <?php if( get_field('hypothesis') ): ?>
+                      <div class="hy-title">Hypothesis: </div>
+                      <div class="hy-meta"><?php the_field( 'hypothesis' ); ?></div>
+                 <?php endif; ?>
+
+                 <?php if( get_field('hypothesis') ): ?>
+                      <div class="hy-title">Hypothesis: </div>
+                      <div class="hy-meta"><?php the_field( 'hypothesis' ); ?></div>
+                 <?php endif; ?>
+
                 <?php $fields = get_field_objects(); ?>
 	            <?php foreach( $fields as $field ): ?>
 
@@ -50,7 +71,7 @@
 
                             if( $value ) {
                         
-                                echo '<a class="learn-more" href="' . $value . '" >View The Hypothesis</a>';
+                                echo '<div class="link-to-link"><a class="learn-more" href="' . $value . '" >View The Hypothesis</a></div>';
 
                             } else {
 
@@ -58,17 +79,41 @@
                         
                             }
                         ?>
+                        <div class="test-top-section">
+
+                            <?php if( get_field('test-pagetype') ): ?>
+                              <div class="t-title">Page Type: </div>
+                              <div class="t-meta"><?php the_field( 'test-pagetype' ); ?></div>
+                            <?php endif; ?>   
+
+                            <?php if( get_field('primary_metric') ): ?>
+                              <div class="t-title">Primary Metric: </div>
+                              <div class="t-meta"><?php the_field( 'primary_metric' ); ?></div>
+                            <?php endif; ?>   
+
+                          <?php if( get_field('type_of_test') ): ?>
+                              <div class="t-title">Type of Test: </div>
+                              <div class="t-meta"><?php the_field( 'type_of_test' ); ?></div>
+                           <?php endif; ?>
+
+                          <?php if( get_field('page_type') ): ?>
+                              <div class="t-title">Type of Page: </div>
+                              <div class="t-meta"><?php the_field( 'page_type' ); ?></div>
+                           <?php endif; ?>
+                     
+
+                        </div>
+
                         <?php if( get_field('test_description') ): ?>
-				            <div class="hy-title">Test Description: 
-                                <span style="color:gray; font-size:12px;font-weight:normal">(Provide a short overview of the specifics of the test.)</span> 
-			                </div>
+				              <?php /* ?>
+                        <div class="hy-title">Test Description: 
+                                  <span style="color:gray; font-size:12px;font-weight:normal">(Provide a short overview of the specifics of the test.)</span> 
+  			                </div>
+                      <?php */?>
                             <div class="hy-meta"><?php the_field( 'test_description' ); ?></div>
                         <?php endif; ?>
 
-                        <?php if( get_field('type_of_test') ): ?>
-			                <div class="hy-title">Type of Test: </div>
-                            <div class="hy-meta"><?php the_field( 'type_of_test' ); ?></div>
-                        <?php endif; ?>
+
 
                         <?php if( get_field('length_of_test') ): ?>
 			                <div class="hy-title">Length of Test: 

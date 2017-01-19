@@ -27,7 +27,52 @@
 	}
 ?>
 	<div class="section-title">
-		<h1><?php echo wp_kses( $et_page_title, array( 'span' => array() ) ); ?></h1>
+		<h1>
+			
+			<?php /* ?> This is the Number block start <?php */ ?>
+
+				<?php if ( is_singular( 'hypotheses' ) )  { ?>
+						<div class="postId">
+						<?php if( get_field('hypothesis_number') ): ?>
+							<div class="postIdType">HYPOTHESIS</div>
+			            	<div class="postIdNumb"><?php the_field( 'hypothesis_number' ); ?></div>
+			             <?php endif; ?>
+					 	<?php /* ?><?php the_ID(); ?><?php */ ?> <span class="raquo">»</span> </span> 
+					</div>
+	            <?php } ?>
+
+
+	            <?php if ( is_singular( 'tests' ) )  { ?>
+					<div class="postId">
+					<?php if( get_field('test_number') ): ?>
+						<div class="postIdType">TEST</div>
+		            	<div class="postIdNumb"><?php the_field( 'test_number' ); ?></div>
+		             <?php endif; ?>
+				 	<?php /* ?><?php the_ID(); ?><?php */ ?> <span class="raquo">»</span> </span> 
+
+
+					</div>
+	            <?php } ?>
+			<?php /* ?> This is the Number block end <?php */ ?>
+
+            <?php /* ?> This is the Number block start <?php */ ?>
+
+                <?php if ( is_post_type_archive( 'hypotheses' ) )  { ?>
+                	Hypotheses
+                <?php } ?>
+
+
+                <?php if ( is_post_type_archive( 'tests' ) )  { ?>
+                	Tests
+                <?php } ?>
+            <?php /* ?> This is the Number block end <?php */ ?>
+
+
+
+
+
+	<?php echo wp_kses( $et_page_title, array( 'span' => array() ) ); ?>
+		
 	<?php if ( $et_tagline <> '' ) { ?>
 		<p class="section-subtitle"><?php echo wp_kses( $et_tagline, array( 'span' => array() ) ); ?></p>
 	<?php } ?>
